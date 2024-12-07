@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR MATRIKS 2X2 VERA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>KALKULATOR MATRIKS VERA AMELLIA</h1>
+        
+        <div class="matrix">
+            <h3>Matriks A</h3>
+            <div class="row">
+                <input type="number" id="a11" placeholder="a11">
+                <input type="number" id="a12" placeholder="a12">
+            </div>
+            <div class="row">
+                <input type="number" id="a21" placeholder="a21">
+                <input type="number" id="a22" placeholder="a22">
+            </div>
+        </div>
+        
+        <div class="matrix">
+            <h3>Matriks B</h3>
+            <div class="row">
+                <input type="number" id="b11" placeholder="b11">
+                <input type="number" id="b12" placeholder="b12">
+            </div>
+            <div class="row">
+                <input type="number" id="b21" placeholder="b21">
+                <input type="number" id="b22" placeholder="b22">
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="addMatrices()">+</button>
+            <button onclick="subtractMatrices()">-</button>
+            <button onclick="multiplyMatrices()">X</button>
+        </div>
+
+        <div id="result">
+            <h3>Hasil</h3>
+            <div id="resultText"></div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
